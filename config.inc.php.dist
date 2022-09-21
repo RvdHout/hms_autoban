@@ -1,0 +1,43 @@
+<?php
+
+// Disable Roundcube Brute-force attacks prevention.
+$config['login_rate_limit'] = 0;
+
+//Connect to hmailserver database
+      /*
+      Connection parameters
+           username: hmailserver database user
+           password: hmailserver database password
+               host: SQL hostname (usually 'localhost') or IP address
+      database_name: hmailserver database name    
+      */
+$config['db_hms_autoban_dsn'] = 'mysql://username:password@host/database_name';
+
+// log autoban
+      /*
+      Enable 'true' or disable 'false' autoban logs
+      */
+$config['autoban_log'] = true;
+
+// Show custom error message or standard Roundcube error message
+      /*
+      Enable 'true' or disable 'false' Custom error message
+      */
+$config['autoban_custom_errormessage'] = false;
+
+
+// Ban remote IP
+      /*
+      Ban remote IP 'true' or don't enforce ban 'false'.
+      Set to 'true' to prevent logins from desktop/mobile clients when too many invalid logon
+      attempts are made from the same IP address via webmail.
+      */
+$config['autoban_remote_ip'] = true;
+
+// Webmail IP
+      /*
+      The IP address where the webmail resides
+      */
+$config['autoban_webmail_ip'] = '127.0.0.1';
+
+?>
