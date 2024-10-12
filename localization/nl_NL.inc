@@ -2,4 +2,4 @@
 
 $labels = array();
 
-$labels['autobanned']='Toegang is tijdelijk geblokkeerd, teveel verkeerde inlogpogingen. Probeer het later nogmaals';
+$labels['autobanned']='Toegang is tijdelijk geblokkeerd (teveel foutieve inlogpogingen).<br />Blokkade verloopt om: $expireson';

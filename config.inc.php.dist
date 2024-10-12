@@ -19,12 +19,17 @@ $config['db_hms_autoban_dsn'] = 'mysql://username:password@host/database_name';
       */
 $config['autoban_log'] = true;
 
+// Update expiry time with consecutive login attempts
+      /*
+      Enable 'true' or disable 'false' expiry time update
+      */
+$config['autoban_update_expirytime'] = false;
+
 // Show custom error message or standard Roundcube error message
       /*
       Enable 'true' or disable 'false' Custom error message
       */
 $config['autoban_custom_errormessage'] = false;
-
 
 // Ban remote IP
       /*
